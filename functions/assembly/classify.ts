@@ -23,6 +23,7 @@ export class ImageCaptioningModel extends Model<
 }
 
 export function captionImage(b64image: string): string {
+  console.log(`payload: ${b64image}`);
   console.log(`size: ${b64image.length}`);
 
   const model = models.getModel<ImageCaptioningModel>("image-captioning");
