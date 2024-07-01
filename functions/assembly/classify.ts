@@ -27,7 +27,7 @@ export function captionImage(b64image: string): string {
   console.log(`size: ${b64image.length}`);
 
   const model = models.getModel<ImageCaptioningModel>("image-captioning");
-  const input = model.createInput([b64image]);
+  const input = model.createInput([b64image.trim()]);
   const output = model.invoke(input).predictions[0];
   return output;
 }
