@@ -7,6 +7,17 @@
       "provider": "hugging-face",
       "host": "hypermode",
       "path": "v1/test"
+    },
+    "embeddings": {
+      "sourceModel": "test",
+      "host": "openai",
+      "path": "v1/embeddings"
+    }
+  },
+  "hosts": {
+    "openai": {
+       "baseUrl": "https://api.openai.com/",
+       "headers": {}
     }
   }
 }
