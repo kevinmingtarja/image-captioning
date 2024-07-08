@@ -5,7 +5,8 @@
     "image-captioning": {
       "sourceModel": "Salesforce/blip-image-captioning-large",
       "provider": "hugging-face",
-      "host": "hypermode"
+      "host": "hypermode",
+      "path": "v1/test"
     }
   }
 }
