@@ -2,6 +2,11 @@
   "$schema": "https://manifest.hypermode.com/hypermode.json",
 
   "models": {
+    "image-captioning": {
+      "sourceModel": "Salesforce/blip-image-captioning-large",
+      "provider": "hugging-face",
+      "host": "hypermode"
+    },
     "embeddings": {
       "sourceModel": "test",
       "host": "openai",
@@ -10,8 +15,8 @@
   },
   "hosts": {
     "openai": {
-       "baseUrl": "https://api.openai.com/",
-       "headers": {}
+      "baseUrl": "https://api.openai.com/",
+      "headers": {}
     }
   }
 }
